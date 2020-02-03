@@ -20,4 +20,9 @@ public class MyController {
         return dataService.getContact();
     }
 
+    @GetMapping(value = "/contact2", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public Mono<Contact> contactDetails2() {
+        return dataService.getContact();
+    }
+
 }
